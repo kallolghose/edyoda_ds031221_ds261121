@@ -73,13 +73,14 @@ class SingleLinkedList:
             if self.size == 1:
                 self.head = None
                 self.tail = None
-            temp_node = self.head
-            for i in range(0, self.size - 1):
-                temp_node = temp_node.next
-            self.tail = temp_node
-            temp_node.next = None
+            else:
+                temp_node = self.head
+                for i in range(0, self.size - 1):
+                    temp_node = temp_node.next
+                self.tail = temp_node
+                temp_node.next = None
         else:
-            if location == 0 or location==1 or location >= self.size:
+            if location == 0 or location >= self.size:
                 print("[ERROR] Please enter a proper location")
                 return
             temp_node = self.head
