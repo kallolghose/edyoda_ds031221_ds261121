@@ -89,4 +89,26 @@ class SingleLinkedList:
             temp_node.next = temp_node.next.next
         self.size = self.size - 1
 
+    def reverse_ll(self):
+        prev = None
+        curr = self.head
+        self.tail = curr
+        while curr is not None:
+            next = curr.next
+            curr.next = prev
+            prev = curr
+            curr = next
+        self.head = prev
 
+
+if __name__ == "__main__":
+    ll = SingleLinkedList()
+    ll.create(10)
+    ll.insert(20, start=True)
+    ll.insert(30, start=True)
+    ll.insert(40, start=True)
+    ll.insert(50, start=True)
+    ll.traversal()
+    print()
+    ll.reverse_ll()
+    ll.traversal()

@@ -27,8 +27,7 @@ class Stack:
 
     def peek(self):
         if self.is_empty():
-            print("[ERROR] : Stack is empty")
-            return
+            return ""
         return self.top.data
 
     def delete_stack(self):
