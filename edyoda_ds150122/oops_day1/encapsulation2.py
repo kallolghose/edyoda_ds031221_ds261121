@@ -7,6 +7,8 @@ Behaviour to_fahrenheit() will convert the temperature from C to F
 2. Use encapsulation and getters and setters
 3. Check value of temperature > -273.15
     if temp < -273.15 print an error message and set temp to 0
+
+Link : Getters Setters : https://www.programiz.com/python-programming/property
 """
 class Celsius:
 
