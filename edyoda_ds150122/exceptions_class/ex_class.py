@@ -12,6 +12,8 @@ try:
     print("Division {}".format(result))
 except (ZeroDivisionError, ValueError):
     print("Error while division")
+else:
+    print("Optional Block : There are no exception raised")
 # except ValueError:
 #     print("Improper Input Given")
 

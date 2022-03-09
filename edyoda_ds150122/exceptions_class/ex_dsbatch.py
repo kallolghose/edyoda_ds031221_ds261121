@@ -6,7 +6,14 @@ def validate_age(age):
 
 
 # Exception is being handled
+
 try:
-    validate_age(-10)
+    fp = open("C:/Users/Hp/OneDrive/Documents/workspace/edYoda/python_space/test_code/index.txt", "a")
+    lines = fp.write("Kallol")
+    print(lines)
 except ValueError:
     print("[ERROR] There is some exception")
+finally:
+    print("============== Close the file !! ========================")
+
+print("This will not be executed if the exeception is raised")
